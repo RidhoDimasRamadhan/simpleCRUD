@@ -6,6 +6,7 @@ import './App.css'
 import CreateUser from './create'
 
 import User from './user'
+import Update from './update'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route path='/' element={<User/>}></Route>
       <Route path='/createUser' element={<CreateUser/>}></Route>
+      <Route path='/update/:id' element={<Update/>}></Route>
     </Routes>
     
   </BrowserRouter>
